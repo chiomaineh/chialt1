@@ -1,0 +1,12 @@
+/*THIS IS TO SHOWCASE HO TO IMPORT CSS FILES */
+
+.reset {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color:aqua;
+}
+
+.lorem {
+    display: flex;
+    flex-direction: column;
+}

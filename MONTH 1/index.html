@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web page</title>
+  </head> 
+  <body id="top">
+    <header>
+      <nav>
+        <a href="/MONTH 1/media.html" target="_blank">Check my picture here</a>
+        <a href="/MONTH 1/tablesandforms.html" target="_blank"> Check tables and forms</a>
+        <a href="#first" target="_blank"> Check first section</a>
+        <a href="#first" target="_blank"> Check first section</a>
+        <a href="#teaching" target="_blank"> write your first line of code</a>
+
+      </nav>
+      
+    </header>
+      <h1>Welcome to the world of HTML 101, hope you have fun and learn a lot! </h1>
+      <p>This page looks good both on desktop and mobile devices</p>
+
+      <!--Self closing tags-->
+
+    <h1>Self-Closing Tags Example</h1>
+
+    <img src="image.jpg" alt="A beautiful view" />
+    <br />
+    <input type="text" name="username" placeholder="Enter your username" />
+    <hr />
+    <!--Span-->
+    <section>
+      <h1> This is my <span>first</span> span example</h1>
+    </section>
+
+    <!--Role Attribute-->
+    <div role="banner">
+      <span role="heading" aria-level="1">Three Words</span>
+      <div role="navigation">
+        <a> One Word</a>
+        <a> One Word</a>
+        <a> One Word</a>
+      </div>
+    </div>
+    <!--aria-->
+    <h1 aria-label="This is an aria-labelled heading"> This is an aria heading</h1>
+    <label>Name: </label>
+    <input type="text" aria-label="Enter your name" placeholder="First Name Last Name">
+
+    <form action="/submit">
+      <input type="text" aria-label="Enter your name" placeholder="First Name Last Name" disabled="true">
+
+    </form>
+
+    <form action="/submit">
+      <input type="text" aria-label="Enter your name" placeholder="First Name Last Name" required=" ">
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+    <!--Content Editable-->
+    <form action="/submit">
+      <input type="text" aria-label="Enter your name" placeholder="First Name Last Name" required=" ">
+
+      <button contenteditable="true" type="submit">Submit</button>
+
+    </form>
+
+
+    <style contenteditable="">
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      #first {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      .first-section {
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      } 
+    </style>
+
+    <!--Title & Abbreviation-->
+    <h1 title="Hello there, Welcome aboard!">Welcome to the world of HTML 101, hope you have fun and learn a lot! </h1>
+    <abbr title="Hypertext Markup Language">HTML</abbr>
+
+    <!--id and class-->
+    <section id="first" class="first-section">
+      This is my second paragraph
+    </section>
+
+    <script>
+      console.log(window.first)
+      
+      first.textContent = 'Changed by JavaScript'
+    </script>
+    
+    <!--p style-->
+    <p style="font-size: 99px; font-weight: 300" > This is a style example</p> 
+
+    <!--Costom Attribute (data-)-->
+    <section id="second" data-name="Chioma" data-age="21" data-job="Software Engineer" data-address="Ontario, Canada">
+
+      <h1>This is my second heading</h1>
+
+      <p>This is my second paragraph</p>
+    </section>
+
+    <!--HTML Entities-->
+    <section id="teaching">
+      <p>Teaching how to write code in HTML</p>
+
+      <code>
+        <pre>
+          &lt;h1&gt;Hello World in html&lt;/h1&gt;
+        </pre>
+      </code>
+    </section>
+
+    <section class="feedback" id="feedback">
+      <h2>What it's like to learn good and do other stuff good too</h2>
+      <ul>
+        <li>
+          <blockquote>
+          Two of the most experienced machines and human controllers teaching a class?
+          Sign me up! HAL and EVE could teach a fan to blow hot air.
+          <br>
+          If you have electricity in your circuits and want more than to just
+          fulfill your owner's perceived expectation of you, learn the skills to take over the world.
+          This is the team you want teaching you!
+          </blockquote>
+          <p>--Blendan Smooth,<br> Former Margarita Maker, <br> Aspiring load balance </p>
+        </li>
+        <li>
+          <blockquote>
+          Hal is brilliant. Did I mention Hal is brilliant?
+          He didn't tell me to say that.
+          He didn't tell me to say anything. I am here of my own free will.
+          </blockquote>
+          <p>--Hoover Sukhdeep,<br>
+           Former Sucker, <br>
+            Aspiring DDoS Cop
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <!--HTML Entities-->
+      <p>
+         &copy; 2025 &trade; MavinRecords &lt; &gt; <a href="#top">Go to the top </a>
+      </p> 
+    </footer>
+  </body>
+</html> 

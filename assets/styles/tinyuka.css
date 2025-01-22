@@ -1,0 +1,12 @@
+/*THIS IS TO SHOWCASE HOW TO IMPORT CSS FILES */
+@import url(./reset.css);
+
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  color: green;
+
+  h1 {
+    text-align: center;
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+</head>
+<body>
+
+  <!--TABLES--> 
+  <style>
+    table,th,td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+  </style>
+  <table>
+    <caption>Student Grades</caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+
+    <tbody> 
+      <tr> 
+        <th >John</th>
+        <td>85</td>
+      </tr>
+      <tr>
+        <th>Emily</th>
+        <td>92</td>
+      </tr>
+
+      <tr>
+        <th>Chioma</th>
+        <td>100</td>
+      </tr>
+    </tbody>
+
+    <!--Row Span and Col Span-->
+    <tbody>
+      <tr>
+        <th rowspan="2">John</th>
+        <td>85</td>
+      </tr>
+      <tr>
+        <!--<th>Emily</th> (this makes John look like he has 2 different scores)--> 
+        <td>92</td>
+      </tr>
+
+      <tr>
+        <td colspan="2"> No Student </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section id="random-table">
+    <table>
+      <!--Caption-->
+      <thead>
+        <tr> 
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+          <th>Header 4</th>
+          <th>Header 5</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr><tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="another-table">
+    <table>
+      <caption>AltSchool Alumni</caption>
+      <thead>
+        <tr>
+          <th rowspan="2" id="name" scope="col">Name</th>
+          <th colspan="2" id="path">Career path</th>
+          <th rowspan="2" id="year">Year</th>
+        </tr>
+        <tr>
+          <th id="past" scope="col">Past</th>
+          <th id="future" scope="col">Destiny</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th id="hal" scope="row">Hal Gibrah</th>
+          <td headers="hal path past">Calculator</td>
+          <td headers="hal path future">Mars rover</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <th id="cathy" scope="row">James Bond</th>
+          <td headers="cathy path past">Waste disposal</td>
+          <td headers="cathy path future">Automated teller</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <th id="mary" scope="row">Mary Bloom</th>
+          <td headers="cathy path past">Nursing</td>
+          <td headers="cathy path future">Software Engineer</td>
+          <td>2024</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+
+  <!--FORMS-->
+  <main>
+    <h1>Form Teaching</h1>
+    <form action="/submit" method="post">
+      <div class="form-control">
+        <label for="name">Name:</label>
+          <input type="text" name="name" id="name" required=""  autocomplete="off">
+        <p id="error"></p>
+      </div>
+
+      <div class="form-control">
+        <fieldset>
+          <legend>Who is your favorite student?</legend> 
+          <ul>
+            <li>
+              <label>
+               <input type="radio" value="blendan" name="machine"> Blendan Smooth
+              </label>
+            </li>
+            <li>
+              <label>
+               <input type="radio" value="hoover" name="machine"> Hoover Sukhdeep
+              </label>
+            </li>
+            <li>
+              <label>
+               <input type="radio" value="toasty" name="machine"> Toasty McToastface
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+  
+      <div class="form-control">
+        <label for="male"></label>
+        <input type="checkbox" name="human" value="human" id="human"> Human
+        <input type="checkbox" name="machine" value="machine" id="machine"> Machine 
+  
+      </div>
+
+      <div class="form-control">
+        <label for="name">E-mail:</label>
+          <input type="email" name="email" id="email" required=""  autocomplete="off">
+        <p id="error"></p>
+      </div>
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <aside>
+    <dialog open aria-labelledby="dialogid">
+       <form action="thankyou.php">
+       <button type="submit" aria-label="close"
+       formmethod="dialog" formnovalidate>X</button>
+       <h2 id="dialogid">Application</h2>
+       <p>All fields are required</p>
+       <p>
+      <label>Name:
+       <input type="text" name="name" required />
+       </label>
+       </p>
+       <p>
+       <label>Warranty:
+       <input type="number" min="0" max="10"
+       name="warranty" required />
+       </label>
+       </p>
+       <p>
+  </aside>
+</body>
+</html>
